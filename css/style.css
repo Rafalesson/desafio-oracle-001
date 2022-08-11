@@ -5,47 +5,62 @@
 .app{
     background-color: #F3F5FC;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
 }
 
 .cabecalho{
-    display: flex;
-    align-items: center;
-    background-color: #F3F5FC;
-    height: 4rem;
     width: 100%;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 1px 5px #ccc;
+}
+
+.logoTitulo{
+    margin-top: 1rem;
 }
 
 .conteudo{
     display: flex;
-    flex-direction: row;
     width: 100%;
-    height: calc(100vh - 8rem);
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .secaoEsquerda{
     display: flex;
     flex-direction: column;
-    width: 65%; 
-    height: 100%;
+    align-items: center;
+    width: 70%; 
+}
+
+.divTexto{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 #areaTexto{
-    height: 100%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     background-color: #F3F5FC;
     border: none;
-    margin-left: 10rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     outline: none;
     color: #0A3871;
     font-size: 1.5rem;
     resize: none;
+}
+
+#areaTexto::-webkit-scrollbar{
+    width: .5rem;
+    border: 1px solid rgba(10, 56, 113, .5);
+    border-radius: 2rem;
+    background-color: #fff
+}
+
+#areaTexto::-webkit-scrollbar-thumb{
+        border: 5px solid rgba(1, 35, 78, .7);
+        border-radius: 2rem;
+        
 }
 
 #areaTexto::placeholder{
@@ -55,32 +70,30 @@
 
 .alerta{
    display: flex;
-   align-items: center;
    width: 100%;
-   margin-left: 7rem;
-   padding: 1rem;
-   color: #343A40;
+   padding: .5rem;
+   color: rgba(52, 58, 64, .5);
    font-size: .8rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .alerta img{
-    margin-right: .2rem;
+    margin-right: .3rem;
+    opacity: .5;
 }
 
 .botoes{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 10rem;
-    padding: 5rem;
+    justify-content: center;
+    padding-bottom: 0.5rem;
 }
 
 .botao{
-    width: 35%;
+    width: 30%;
     height: 4rem;
-    border-radius: 1.6rem;
+    border-radius: 1.5rem;
     border: none;
     font-weight: 500;
     cursor: pointer;
@@ -108,6 +121,7 @@
 
 #descripto:hover{
     background-color: #fff;
+    color: #01234e;
 }
 
 .secaoDireita{
@@ -115,12 +129,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 25%;
-    height: calc(100vh - 12rem);
+    width: 20%;
+    height: calc(100vh - 8rem);
     background-color: #fff;
-    padding: 1rem;
     border-radius: .7rem;
-    box-shadow: 1px 1px 5px #ccc;
+    box-shadow: 1px 1px 10px #ccc;
+
 }
 
 .secaoDireita img{
@@ -129,7 +143,7 @@
 }
 
 .secaoDireita .p1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #343A40;
     width: 70%;
@@ -137,23 +151,24 @@
 } 
 
 .secaoDireita .p2{
-    font-size: 1rem;
+    font-size: .85rem;
     color: #495057;
     width: 75%;
     text-align: center;
+
 }
 
 .rodape{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 3.5rem;
+    padding: 1rem;
     background-color: #F3F5FC;
-    border-top: 1px solid #ccc;
-    box-shadow: 1px 1px 10px #ccc;
+}
+
+.rodape p{
+    border-bottom: 1px dotted #0A3871;
 }
 
 .rodape a{
