@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif
 }
 
+
 .app{
     background-color: #F3F5FC;
     display: flex;
@@ -50,20 +51,20 @@
     resize: none;
 }
 
-#areaTexto::-webkit-scrollbar{
+#areaTexto::-webkit-scrollbar, #resultado::-webkit-scrollbar {
     width: .5rem;
     border: 1px solid rgba(10, 56, 113, .5);
     border-radius: 2rem;
     background-color: #fff
 }
 
-#areaTexto::-webkit-scrollbar-thumb{
-        border: 5px solid rgba(1, 35, 78, .7);
+#areaTexto::-webkit-scrollbar-thumb, #resultado::-webkit-scrollbar-thumb {
+        border: 5px solid rgba(1, 35, 78, 1);
         border-radius: 2rem;
         
 }
 
-#areaTexto::placeholder{
+#areaTexto::placeholder, #resultado::placeholder{
     color: rgba(10, 56, 113, .5);
     font-size: 1.2rem;
 }
@@ -98,13 +99,23 @@
     font-weight: 500;
     cursor: pointer;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+#copiar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 60%;
+    border: 1px solid #0a3871;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #cripto{
     background-color: #0A3871;
     color: #fff;
     margin-right: 1rem;
-    font-size: 1.2rem;
 }
 
 #cripto:hover{
@@ -116,10 +127,9 @@
     color: #0A3871;
     margin-left: 1rem;
     border: 1px solid #0A3871;
-    font-size: 1.2rem;
 }
 
-#descripto:hover{
+#descripto:hover, #copiar:hover{
     background-color: #fff;
     color: #01234e;
 }
@@ -129,7 +139,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 20%;
+    width: 25%;
     height: calc(100vh - 8rem);
     background-color: #fff;
     border-radius: .7rem;
@@ -158,6 +168,17 @@
 
 }
 
+#resultado{
+    width:90%;
+    height: 60%;
+    font-size: 1rem;
+    color: #0A3871;
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
 .rodape{
     display: flex;
     align-items: center;
@@ -174,4 +195,13 @@
 .rodape a{
     color: #0A3871;
     font-weight: bold;
+}
+
+.direitaJs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
 }
