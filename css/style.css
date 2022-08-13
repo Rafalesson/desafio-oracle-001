@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    justify-content: space-between;
 }
 
 .cabecalho{
@@ -173,11 +174,12 @@
     width:90%;
     height: 60%;
     font-size: 1rem;
-    color: #0A3871;
+    color: rgb(10, 56, 113);
     background: transparent;
     border: none;
     resize: none;
     outline: none;
+    font-size: 1.4rem;
 }
 
 .rodape{
@@ -205,4 +207,52 @@
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 750px){
+    .conteudo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    }
+
+    .secaoEsquerda{
+        width: 100%;
+    }
+
+    #blueBoy{
+        display: none;
+    }
+
+    .secaoDireita{
+        width: 70%;
+        height: 15vh;
+        margin: 0 auto;
+    }
+
+    .divTexto{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .secaoDireita .p1{
+        font-size: 1.2rem;
+    }
+
+    .secaoDireita .p2{
+        font-size: .7rem;
+    }
+
+    .cabecalho img{
+        margin-top: 1rem;
+    }
+
+    .direitaJs{
+        height: 100%;
+        width: 100%;
+    }
+
+    .botao{
+        width: 40%;
+    }
 }
