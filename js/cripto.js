@@ -8,6 +8,8 @@ const mensagem = document.querySelector('#areaTexto');
 const mainFoto = document.querySelector('#blueBoy');
 const secaoDireitaP1 = document.querySelector('.p1');
 const secaoDireitaP2 = document.querySelector('.p2');
+const larguraTelaUser = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    const textArea = document.querySelector('.divTexto');
 
 function criptografar() { 
     const texto = mensagem.value;
@@ -45,8 +47,6 @@ function mostraResultado () {
     `
     const copiar = document.querySelector('#copiar');
     const resultado = document.querySelector('#resultado');
-    const larguraTelaUser = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const textArea = document.querySelector('.divTexto');
 
     if (larguraTelaUser <= 750) { 
         secaoDireita.style.height = '50vh';
@@ -69,15 +69,21 @@ function mostraResultado () {
 }
 
 cripto.onclick = () => { 
+    if (larguraTelaUser <= 450) { 
+        cripto.style.width = '90%';
+        descripto.style.width = '90%';
+    } 
+
     mostraResultado();
     criptografar();
-    cripto.style.width = '90%';
-    descripto.style.width = '90%';
 }
 
 descripto.onclick = () => { 
+    if (larguraTelaUser <= 450) { 
+        cripto.style.width = '90%';
+        descripto.style.width = '90%';
+    } 
+
     mostraResultado();
     descriptografar();
-    cripto.style.width = '90%';
-    descripto.style.width = '90%';
 }
