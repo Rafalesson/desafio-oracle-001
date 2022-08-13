@@ -256,3 +256,30 @@
         width: 40%;
     }
 }
+
+@media  (max-width: 450px){
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .botao{
+        width: 90%;
+    }
+
+    #cripto, #descripto{
+        margin: 0;
+    }
+
+    #cripto{
+        margin-bottom: .5rem;
+    }
+
+    #descripto{
+        margin-top: .5rem;
+    }
+
+}

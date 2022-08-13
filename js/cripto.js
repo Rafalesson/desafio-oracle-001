@@ -55,8 +55,6 @@ function mostraResultado () {
         cripto.style.fontSize = '1.2rem';
         descripto.style.width = '40%';
         descripto.style.fontSize = '1.2rem';
-        
-
     }
 
     copiar.onclick = function () { 
@@ -64,7 +62,8 @@ function mostraResultado () {
         if(larguraTelaUser <= 750) { 
             secaoDireita.style.height = '20vh';
             textArea.style.height = '50vh';
-            copiar.style.marginBottom = '.7rem';
+            cripto.style.width = '90%';
+            descripto.style.width = '90%';
         }
     }
 }
@@ -72,9 +71,13 @@ function mostraResultado () {
 cripto.onclick = () => { 
     mostraResultado();
     criptografar();
+    cripto.style.width = '90%';
+    descripto.style.width = '90%';
 }
 
 descripto.onclick = () => { 
     mostraResultado();
     descriptografar();
+    cripto.style.width = '90%';
+    descripto.style.width = '90%';
 }
